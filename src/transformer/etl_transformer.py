@@ -6,14 +6,14 @@ def transform_data(df, steps_per_floor_):
         Street.
     :return: Transformed DataFrame.
     """
-    df_transformed = (
-        df
-        .select(
-            col('id'),
-            concat_ws(
-                ' ',
-                col('first_name'),
-                col('second_name')).alias('name'),
-               (col('floor') * lit(steps_per_floor_)).alias('steps_to_desk')))
+    # df_transformed = (
+    #     df
+    #     .select(
+    #         col('id'),
+    #         concat_ws(
+    #             ' ',
+    #             col('first_name'),
+    #             col('second_name')).alias('name'),
+    #            (col('floor') * lit(steps_per_floor_)).alias('steps_to_desk')))
 
-    return df_transformed
+    return None

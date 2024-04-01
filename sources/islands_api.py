@@ -6,6 +6,11 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     return 'Hello, Nakama!'
+#
+# @app.route('/data')
+# def hello():
+#     return '/api/data'
+
 
 # Define a route for an API endpoint
 @app.route('/api/data')

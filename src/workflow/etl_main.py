@@ -1,6 +1,6 @@
-from src.extractor import extract_data
-from src.transformer import transform_data
-from src.loader import load_data
+from src.extractor.etl_extractor import extract_data
+from src.transformer.etl_transformer import transform_data
+from src.loader.etl_loader import load_data
 from dependencies.spark import start_spark
 
 def main():
